@@ -1,0 +1,25 @@
+Masz za zadnie znaleźć scieżkę (od gornego wierzchołka do podstawy) z najmniejszą sumą elementów oraz sumę cyfr w tej ścieżce w trójkącie złożonym z cyfr. Wychodząc z dowolnej cyfry zawsze możesz pójść w lewo na dół lub w prawo na dół. Odpowiedzi należy podać jako liczby. Liczbę ze ścieżki uzuskujemy sklejając wszystkie cyfry ze ścieżki ze sobą. 
+
+Przykład trójkąta:
+   9   
+  2 7  
+ 2 9 1 
+2 6 8 6
+Możliwe ścieżki:
+ - 9→7→1→6
+ - 9→7→1→8
+ - 9→7→9→8
+ - 9→7→9→6
+ - 9→2→9→8
+ - 9→2→9→6
+ - 9→2→2→6
+ - 9→2→2→2
+
+Ścieżka z najmniejszą sumą: 9222 (sklejone 9→2→2→2)
+Wartośc najniższej sumy: 15
+
+Do tego zadania są 3 podpunkty we wszystkich należy podać sumę jak i ścieżkę jako liczby:
+- bardzo łatwy
+- łatwy
+- średni
+Trójkąt do każdego podpunktu jest w osobnym pliku, który należy pobrać. Uważaj na znaki końca linii w plikach.
