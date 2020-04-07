@@ -1,0 +1,69 @@
+Głównym celem pierwszej pracy domowej jest opublikowanie w Internecie naszej aplikacji napisanej w Pythonie. Pozwoli to nam w dalszych etapach kursu na skupienie się na innych zagadnieniach związanych z web developmentem w Pythonie.
+
+Podczas wykładu przekazaliśmy wskazówki jak zrobić deploy aplikacji na Heroku.com. Ten sposób uznamy więc za preferowany. Ocenimy tylko te prace które będą dostępne publicznie.
+
+WAŻNE 1: Praca domowa sprawdzana będzie AUTOMATYCZNIE dlatego bardzo ważne jest, żeby wasze endopointy zwracały dokładnie to o co proszono w poleceniu, np. jeśli ktoś wykona zadanie 1 z grubsza poprawnie, ale pod ścieżką `/` będzie string `Hellow, Wurld!1!` to rozwiązanie nie przejdzie testów.
+
+WAŻNE 2: Żeby testy mogły zostać uruchomione należy wkleić url do swojej działającej aplikacji `APP_URL`  oraz link do repozytorium z kodem `REPOSITORY_URL` po lewej stronie.
+
+WAŻNE 3: Repl.it ma czasami problemy z łączem i testy nie będą przechodzić wyrzucając z siebie komunikat w stylu 'oops something went wrong', należy wtedy odświeżyć okno przeglądarki (najlepiej shift+f5) i spróbować ponownie. W razie gdyby problem nie znikał proszę o kontakt na kursowym githubie.
+
+
+Background
+
+W obecnej sytuacji ciężko jest zliczyć osoby, które potencjalnie mogą być chore z pododu COVID-19. Waszym zadaniem będzie napisanie aplikacji, która pomoże to zrealizować.
+
+
+Zadanie 1
+
+Stwórz ścieżkę '/' która zwracać będzie odpowiedź w postaci JSONa
+
+`{"message": "Hello World during the coronavirus pandemic!"}`
+
+PS 1 Zobacz co można znaleźć pod endpoitem `/docs`
+
+
+Zadanie 2
+
+Stwórz ścieżkę '/method' która zwróci nazwę metody z jaką wykonano request.
+PS Wystarczy jeśli endpoint będzie obsługiwał requesty `GET`, `POST`, `PUT`, `DELETE`
+PS2 W kodzie nie wolno użyć żadnego `ifa`
+
+format odpowiedzi(JSON):
+`{"method": "METHOD"}`
+
+
+Zadanie 3
+
+Stwórz ścieżkę `/patient`, która przyjmie request z metodą `POST` i danymi w formacie json w postaci:
+
+`{"name": "IMIE", "surename": "NAZWISKO"}`
+
+i zwróci JSON w postaci:
+
+`{"id": N, "patient": {"name": "IMIE", "surename": "NAZWISKO"}}`
+
+Gdzie `N` jest kolejnym numerem zgłoszonej osoby
+
+Naturalnie ścieżka ma działać dla dowolnych stringów (w kodowaniu utf-8) podanych w polach `name` i `surename`.
+
+PS 1 W tym zadaniu ważne jest aby znaleźć miejsce w którym będzie można zapisać ilość odwiedzin od ostatniego uruchomienia aplikacji na serwerze oraz umieć posługiwać JSONami.
+Na tym etapie kursu nie bawimy się w bazy danych. Być może spostrzeżesz bardzo ciekawe zachowanie ;-)
+
+PS 2 Przed uruchomieniem testów, należy zrestartować swoją aplikację, żeby licznik na początku miał wartość 0!
+
+
+Zadanie 4
+Stwórz ścieżkę `/patient/{pk}`, która przyjmuje request w metodą GET.
+
+pk, powinien być liczbą. Najlepiej intem.
+
+W przypadku znalezienia takiego pacjenta, odpowiedź powinna wyglądać tak:
+`{"name": "NAME", "surename": "SURENAME"}`
+
+W przypadku nieznalezienia należy zwrócić odpowiedni kod http:
+https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+
+PS 1 Podobnie jak w poprzednim zadaniu, znajdź miejsce w aplikacji, gdzie można zapisać pacjenta
+
+PS 2 Zmodyfikuj endpoint POST `/patient`, tak aby zachował przesłane dane
