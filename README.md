@@ -108,11 +108,9 @@ Powinno ono zwrócić wynik `Python 3.8.x`.
 Programowanie w Pythonie nie wymaga żadnych specjalistycznych narzędzi - wystarczy korzystać z edytora tekstu. Na zajęciach możesz korzystać z dowolnego edytora. Jeżeli nie wiesz co wybrać, polecamy Sublime Text [https://www.sublimetext.com/](https://www.sublimetext.com/).
 
 ### Punktacja prac domowych
-Punktacja za prace domowe:
-Praca domowa 1:max 15 punktów (poprawne/max * 15)
-Praca domowa 2:max 25 punktów (poprawne/max * 25)
-Praca domowa 3:max 30 punktów (poprawne/max * 30)
-Praca domowa 4:max 30 punktów (poprawne/max * 30)
-
-Sumarycznie max 100 punktów
-Minimalnie wymaganych na zaliczenie jest 70 punktów.
+- Praca domowa 1:max 15 punktów (poprawne/max * 15)
+- Praca domowa 2:max 25 punktów (poprawne/max * 25)
+- Praca domowa 3:max 30 punktów (poprawne/max * 30)
+- Praca domowa 4:max 30 punktów (poprawne/max * 30)
+- Sumarycznie max 100 punktów
+- Minimalnie wymaganych na zaliczenie jest 70 punktów
