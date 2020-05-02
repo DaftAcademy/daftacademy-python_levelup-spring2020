@@ -1,0 +1,4 @@
+.ipynb_checkpoints/*
+*/.ipynb_checkpoints/*
+/kody_obecnosci.txt
+*.pyc
