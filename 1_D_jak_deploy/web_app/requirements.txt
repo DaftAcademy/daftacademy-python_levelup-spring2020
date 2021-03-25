@@ -20,7 +20,7 @@ MarkupSafe==1.1.1
 promise==2.3
 pydantic==1.4
 python-multipart==0.0.5
-PyYAML==5.3
+PyYAML==5.4
 requests==2.23.0
 Rx==1.6.1
 six==1.14.0
