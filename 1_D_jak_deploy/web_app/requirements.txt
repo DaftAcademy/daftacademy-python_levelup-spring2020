@@ -18,7 +18,7 @@ itsdangerous==1.1.0
 Jinja2==2.11.1
 MarkupSafe==1.1.1
 promise==2.3
-pydantic==1.4
+pydantic==1.6.2
 python-multipart==0.0.5
 PyYAML==5.3
 requests==2.23.0
